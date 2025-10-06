@@ -9,13 +9,13 @@ public class GetToken {
      * Run to get your token after you complete the code.
      * @param args unused arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws java.io.IOException {
         GetExample example = new GetExample();
-
         String gradeAPISignUpURL = "https://grade-apis.panchen.ca/signUp";
-        // TODO Task 1: use the run method to get your Grade API token (or obtain your token through a web browser).
-        String response = "";
-        // response = example.run( ...)
+        String username = "kasu123";
+
+        String response = example.run(gradeAPISignUpURL, "username", username);
+
         System.out.println(response);
     }
 }
